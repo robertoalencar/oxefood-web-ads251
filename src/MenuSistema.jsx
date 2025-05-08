@@ -15,12 +15,12 @@ export default function MenuSistema (props) {
                    to='/'
                />
 
-               <Menu.Item
+                <Menu.Item
                    content='Cliente'
                    active={props.tela === 'cliente'}
                    as={Link}
-                   to='/form-cliente'
-               />
+                   to='/list-cliente'
+                />
                
                <Menu.Item
                    content='Produto'
