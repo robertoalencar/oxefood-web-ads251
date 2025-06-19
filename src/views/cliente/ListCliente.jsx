@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Button, Container, Divider, Header, Icon, Modal, Table } from 'semantic-ui-react';
 import MenuSistema from '../../MenuSistema';
@@ -24,7 +24,7 @@ export default function ListCliente () {
 
     function carregarLista() {
 
-        axios.get("http://localhost:8085/api/cliente")
+        axios.get("http://localhost:8080/api/cliente")
         .then((response) => {
             setLista(response.data)
         })
